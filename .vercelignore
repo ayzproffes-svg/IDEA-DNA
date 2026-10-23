@@ -1,0 +1,15 @@
+node_modules
+.next
+.git
+.env*
+!.env.example
+*.tsbuildinfo
+.vercel
+.owner-password.txt
+.next-upgrade-check
+.next-upgrade-dev
+backups
+deliverables
+.next-upgrade-final
+.next-upgrade-preview
+.next-upgrade-release

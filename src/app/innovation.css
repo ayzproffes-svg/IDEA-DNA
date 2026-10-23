@@ -1,0 +1,127 @@
+.innovation-panel {
+  margin: 24px;
+  padding: 24px;
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  background: var(--panel);
+}
+.innovation-tabs,
+.compare-controls {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin: 18px 0;
+}
+.innovation-tabs button,
+.accessible-nodes button {
+  padding: 12px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  text-align: left;
+}
+.innovation-tabs button[aria-pressed="true"],
+.accessible-nodes button[aria-pressed="true"] {
+  outline: 2px solid #65ba9c;
+}
+.innovation-tabs button {
+  text-transform: capitalize;
+}
+.innovation-form {
+  display: grid;
+  gap: 12px;
+  max-width: 720px;
+  margin: 20px 0;
+  padding: 20px;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+}
+.innovation-panel label {
+  display: grid;
+  gap: 6px;
+}
+.innovation-panel textarea {
+  min-height: 100px;
+}
+.innovation-panel input,
+.innovation-panel select,
+.innovation-panel textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--panel);
+  color: inherit;
+}
+.innovation-entry,
+.tour-card {
+  padding: 18px;
+  margin: 14px 0;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+}
+.innovation-entry small,
+.tour-card small,
+.accessible-nodes small {
+  display: block;
+  margin-top: 8px;
+}
+.innovation-entry p,
+.version-columns p {
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+.innovation-entry button {
+  color: #88d9b9;
+}
+.accessible-nodes {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 10px;
+  margin: 16px 0;
+}
+.version-columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+.text-diff {
+  line-height: 2;
+  white-space: pre-wrap;
+}
+.text-diff del {
+  background: #683c3c;
+  text-decoration: line-through;
+}
+.text-diff ins {
+  background: #235f49;
+  text-decoration: underline;
+}
+.demo-banner {
+  padding: 14px 24px;
+  background: #263d34;
+}
+@media (max-width: 700px) {
+  .innovation-panel {
+    margin: 10px;
+    padding: 16px;
+  }
+  .version-columns {
+    grid-template-columns: 1fr;
+  }
+  .canvas-toolbar {
+    flex-wrap: wrap;
+  }
+  .compare-controls > label {
+    width: 100%;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation: none !important;
+    transition: none !important;
+    scroll-behavior: auto !important;
+  }
+}
